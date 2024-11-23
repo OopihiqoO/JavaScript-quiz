@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body {
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #444;
+  color: #fff;
+}
+
+.question {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px 30px; /* Increase padding */
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 10px; /* Add space above buttons */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visual */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #38a;
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+button:active {
+  transform: translateY(2px); /* Slight press effect */
+}
+
+#timer {
+  width: 100%;
+  height: 8px; /* Make the countdown bar smaller */
+  background-color: #ddd;
+  margin-top: 20px;
+  position: relative;
+}
+
+#time-bar {
+  height: 100%;
+  background-color: #279;
+  width: 100%;
+  transition: width 1s linear;
+}
+
+#time-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  padding: 5px;
+  color: #333;
+  font-size: 16px;
+}
+
+#quiz {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* Center quiz */
+}
+
+#submit {
+  display: none; /* Hidden initially */
+}
+
+#results {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-question {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.result-question p {
+  margin: 5px 0;
+}
+
+.result-question strong {
+  font-size: 18px;
+}
+
+.result-question .correct {
+  color: lightgreen;
+}
+
+.result-question .incorrect {
+  color: red;
+}
